@@ -1,0 +1,60 @@
+<!DOCTYPE html> <html><head>
+        <title>Teletubby</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <style>body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: blue;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}</style></head>
+    <body>
+        <div class="title">
+            <h1>Which Type of Teletubby Are You?</h1>
+        </div>
+        <div class="questions">
+            <h4>How old are you?</h4>
+            <img src="https://study.com/cimages/videopreview/age_thumb_177423.jpg">
+            <input class="this">
+            <h4>Which do you prefer bananas, apples, grapes, or oranges?</h4>
+            <img src="https://st2.depositphotos.com/3210553/6493/i/950/depositphotos_64933939-stock-photo-branch-of-blue-grapes-yellow.jpg">
+            <input class="that">
+           
+        </div>
+        <button class="yes">Submit</button>
+        <div class="result">
+            this is where the user will see their quiz result!
+        </div>
+
+
+
+    
+<script>
+/*__POPCODESTART__*/
+var input1;
+var input2;
+var button;
+var banana1 = "bananas";
+var apple2 = "apples";
+var grape3 = "grapes";
+var orange4 = "oranges";
+button = document.querySelector(".yes");
+
+button.onclick = function () {
+  input1 = document.querySelector(".this").value;
+  input2 = document.querySelector(".that").value;
+
+  if (input1 <= 20 && input2 === "bananas") {}
+
+  if (input1 >= 21 && input2 === "apples") {//red teletubby
+  }
+
+  if (input1 >= 41 && input2 === "grapes") {//green teletubby
+  }
+
+  if (input1 >= 61 && input2 === "oranges") {//purple teletubby
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImlucHV0MSIsImlucHV0MiIsImJ1dHRvbiIsImJhbmFuYTEiLCJhcHBsZTIiLCJncmFwZTMiLCJvcmFuZ2U0IiwiZG9jdW1lbnQiLCJxdWVyeVNlbGVjdG9yIiwib25jbGljayIsInZhbHVlIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFJQSxNQUFKO0FBQ0EsSUFBSUMsTUFBSjtBQUNBLElBQUlDLE1BQUo7QUFDQSxJQUFJQyxPQUFPLEdBQUUsU0FBYjtBQUNBLElBQUlDLE1BQU0sR0FBRSxRQUFaO0FBQ0EsSUFBSUMsTUFBTSxHQUFFLFFBQVo7QUFDQSxJQUFJQyxPQUFPLEdBQUUsU0FBYjtBQUVBSixNQUFNLEdBQUNLLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixNQUF2QixDQUFQOztBQUNBTixNQUFNLENBQUNPLE9BQVAsR0FBaUIsWUFBVztBQUN4QlQsRUFBQUEsTUFBTSxHQUFDTyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsT0FBdkIsRUFBZ0NFLEtBQXZDO0FBQ0FULEVBQUFBLE1BQU0sR0FBQ00sUUFBUSxDQUFDQyxhQUFULENBQXVCLE9BQXZCLEVBQWdDRSxLQUF2Qzs7QUFDQSxNQUFHVixNQUFNLElBQUksRUFBVixJQUFnQkMsTUFBTSxLQUFLLFNBQTlCLEVBQXdDLENBRXZDOztBQUNELE1BQUdELE1BQU0sSUFBRyxFQUFULElBQWVDLE1BQU0sS0FBSSxRQUE1QixFQUFxQyxDQUNqQztBQUNIOztBQUNELE1BQUdELE1BQU0sSUFBRyxFQUFULElBQWVDLE1BQU0sS0FBSSxRQUE1QixFQUFxQyxDQUNqQztBQUNIOztBQUNELE1BQUlELE1BQU0sSUFBRyxFQUFULElBQWVDLE1BQU0sS0FBSSxTQUE3QixFQUF1QyxDQUNuQztBQUNIO0FBTUosQ0FwQkQiLCJzb3VyY2VzQ29udGVudCI6WyJsZXQgaW5wdXQxO1xubGV0IGlucHV0MjtcbmxldCBidXR0b247XG5sZXQgYmFuYW5hMT0oXCJiYW5hbmFzXCIpO1xubGV0IGFwcGxlMj0oXCJhcHBsZXNcIik7XG5sZXQgZ3JhcGUzPShcImdyYXBlc1wiKTtcbmxldCBvcmFuZ2U0PShcIm9yYW5nZXNcIik7XG5cbmJ1dHRvbj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnllc1wiKTtcbmJ1dHRvbi5vbmNsaWNrID0gZnVuY3Rpb24oKSB7XG4gICAgaW5wdXQxPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIudGhpc1wiKS52YWx1ZTtcbiAgICBpbnB1dDI9ZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi50aGF0XCIpLnZhbHVlO1xuICAgIGlmKGlucHV0MSA8PSAyMCAmJiBpbnB1dDIgPT09IFwiYmFuYW5hc1wiKXtcbiAgICAgICAgXG4gICAgfVxuICAgIGlmKGlucHV0MSA+PTIxICYmIGlucHV0MiA9PT1cImFwcGxlc1wiKXtcbiAgICAgICAgLy9yZWQgdGVsZXR1YmJ5XG4gICAgfVxuICAgIGlmKGlucHV0MSA+PTQxICYmIGlucHV0MiA9PT1cImdyYXBlc1wiKXtcbiAgICAgICAgLy9ncmVlbiB0ZWxldHViYnlcbiAgICB9XG4gICAgaWYgKGlucHV0MSA+PTYxICYmIGlucHV0MiA9PT1cIm9yYW5nZXNcIil7XG4gICAgICAgIC8vcHVycGxlIHRlbGV0dWJieVxuICAgIH1cbiAgICBcbiAgIFxuICAgIFxuICAgIFxuICAgIFxufTtcblxuXG4iXX0=</script></body></html>
